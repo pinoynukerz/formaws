@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="http://ec2-100-25-182-244.compute-1.amazonaws.com/html-main/assets/img/favicon.png" rel="icon">
+  <link href="http://ec2-100-25-182-244.compute-1.amazonaws.com/html-main/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -25,7 +25,7 @@
   <link href="http://ec2-100-25-182-244.compute-1.amazonaws.com/html-main/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="http://ec2-100-25-182-244.compute-1.amazonaws.com/html-main/assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Knight - v4.9.1
@@ -59,7 +59,7 @@
   <script src="http://ec2-100-25-182-244.compute-1.amazonaws.com/html-main/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="http://ec2-100-25-182-244.compute-1.amazonaws.com/html-main/assets/js/main.js"></script>
 
 </body>
 
