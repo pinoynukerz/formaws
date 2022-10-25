@@ -44,7 +44,7 @@
       <h1 data-aos="zoom-in">AUDIOPHILE TEST FORM</h1>
       <h2 data-aos="fade-up">We are team of talented designers making websites with Bootstrap</h2>
         
-      <a data-aos="fade-up" data-aos-delay="200" href="" class="btn-get-started scrollto">Get Started</a>
+      <a data-aos="fade-up" data-aos-delay="200" href="http://ec2-100-25-182-244.compute-1.amazonaws.com/amazon-ses-smtp-sample.php" class="btn-get-started scrollto">Get Started</a>
     </div>
   </section><!-- End Hero -->
     
