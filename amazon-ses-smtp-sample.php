@@ -11,18 +11,18 @@ require 'vendor/autoload.php';
 
 // Replace sender@example.com with your "From" address.
 // This address must be verified with Amazon SES.
-$sender = 'name@mydomain.com';
+$sender = 'jmattz23@hotmail.com';
 $senderName = 'Sender Name';
 
 // Replace recipient@example.com with a "To" address. If your account
 // is still in the sandbox, this address must be verified.
-$recipient = 'recipient@mydomain.com';
+$recipient = 'jmattz23@hotmail.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
-$usernameSmtp = getenv('SES_USER');
+$usernameSmtp = getenv('AKIAVFEKWWJKOCX3NVOC');
 
 // Replace smtp_password with your Amazon SES SMTP password.
-$passwordSmtp = getenv('SES_PASS');
+$passwordSmtp = getenv('BNHBX65+DorQDmmi9T95DCei5oH6KM6M1umgyt4Pht4i');
 
 // Specify a configuration set. If you do not want to use a configuration
 // set, comment or remove the next line.
