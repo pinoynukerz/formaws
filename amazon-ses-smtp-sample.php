@@ -11,42 +11,38 @@ require 'vendor/autoload.php';
 
 // Replace sender@example.com with your "From" address.
 // This address must be verified with Amazon SES.
-$sender = 'jmattz23@hotmail.com';
+$sender = 'name@mydomain.com';
 $senderName = 'Sender Name';
 
 // Replace recipient@example.com with a "To" address. If your account
 // is still in the sandbox, this address must be verified.
-$recipient = 'alfred.mattz@gmail.com';
+$recipient = 'recipient@mydomain.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
-$usernameSmtp = 'AKIAVFEKWWJKOCX3NVOC';
+$usernameSmtp = getenv('SES_USER');
 
 // Replace smtp_password with your Amazon SES SMTP password.
-$passwordSmtp = 'BNHBX65+DorQDmmi9T95DCei5oH6KM6M1umgyt4Pht4i';
+$passwordSmtp = getenv('SES_PASS');
 
 // Specify a configuration set. If you do not want to use a configuration
 // set, comment or remove the next line.
-$configurationSet = 'ConfigSet';
+//$configurationSet = 'ConfigSet';
 
 // If you're using Amazon SES in a region other than US West (Oregon),
 // replace email-smtp.us-west-2.amazonaws.com with the Amazon SES SMTP
 // endpoint in the appropriate region.
 $host = 'email-smtp.us-east-1.amazonaws.com';
-$port = 465;
+$port = 587;
 
 // The subject line of the email
-$subject = 'Amazon SES test (SMTP interface accessed using PHP)';
+$subject = 'Subject Here';
 
 // The plain-text body of the email
-$bodyText =  "Email Test\r\nThis email was sent through the
-    Amazon SES SMTP interface using the PHPMailer class.";
+$bodyText =  "AWS RDS Staging Password Reset. Your AWS RDS Staging password has been reset. See attached file for your password.";
 
 // The HTML-formatted body of the email
-$bodyHtml = '<h1>Email Test</h1>
-    <p>This email was sent through the
-    <a href="https://aws.amazon.com/ses">Amazon SES</a> SMTP
-    interface using the <a href="https://github.com/PHPMailer/PHPMailer">
-    PHPMailer</a> class.</p>';
+$bodyHtml = 'Hi,<br /><br />
+    <p>Your AWS RDS Staging password has been reset. See attached file for your new password.</p>';
 
 $mail = new PHPMailer(true);
 
@@ -60,7 +56,7 @@ try {
     $mail->Port       = $port;
     $mail->SMTPAuth   = true;
     $mail->SMTPSecure = 'tls';
-    $mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
+    //$mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
 
     // Specify the message recipients.
     $mail->addAddress($recipient);
@@ -71,6 +67,7 @@ try {
     $mail->Subject    = $subject;
     $mail->Body       = $bodyHtml;
     $mail->AltBody    = $bodyText;
+    $mail->addAttachment("pass.txt.gpg", 'pass.txt.gpg');
     $mail->Send();
     echo "Email sent!" , PHP_EOL;
 } catch (phpmailerException $e) {
@@ -80,4 +77,3 @@ try {
 }
 
 ?>
-
