@@ -40,7 +40,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="assets/img/hero-logo.png" alt=""></a>
+      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="http://ec2-100-25-182-244.compute-1.amazonaws.com/html-main/assets/img/hero-logo.png" alt=""></a>
       <h1 data-aos="zoom-in">AUDIOPHILE TEST FORM</h1>
       <h2 data-aos="fade-up">We are team of talented designers making websites with Bootstrap</h2>
         
